@@ -36,16 +36,18 @@
       <style>
         .image-slider {
           height: 100vh;
-          display: flex;
+          
+        }
+        .row{
+        
+          padding-top: 100px;
           align-items: center;
           justify-content: center;
-          font-size: 24px;
-          font-weight: bold;
+          
           color: white;
         }
-      
         .image-slider:nth-child(odd) {
-          background-color: #ff4f4f;
+          
         }
       
         .image-slider:nth-child(even) {
@@ -66,28 +68,9 @@
           font-size: 20px;
           /* Add any other styles you want */
         }
-        .image-swiper-container {
-          position: relative;
-        }
+       
         
-        .count-box {
-          position: absolute;
-          top: 0;
-          right: 0;
-          padding: 20px;
-          background-color: rgba(0, 0, 0, 0.8);
-        }
         
-        .row::after {
-          content: "";
-          display: table;
-          clear: both;
-        }
-        
-        .image-swiper-container {
-          float: left;
-          /* Your styles for the image swiper container */
-        }
         
         h1 {
           /* Your styles for the heading element */
@@ -210,7 +193,7 @@
     </h1> -->
     
     
-    <div  id="i" class="image-slider hero-wrap js-fullheight" style="background-image: url('images/home-BG.png');" data-stellar-background-ratio="0.5">
+    <div id="abou"  class="image-slider hero-wrap js-fullheight" style="background-image: url('images/home-BG.png');" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center text-container" data-scrollax-parent="true">
@@ -261,25 +244,165 @@
        <div class="nav-mail-wrapper nav-transform-right nav-right right-corner">
        
        
-           <h3 class="nav-mail">  <a style="color: white;" href="mailto:hello@stevenmengin.com?subject=Hello%20steven"> hello@stevenmengin.com</a> </h3>
+           <h3 class="nav-mail">  <a style="color: white;" href="mailto:nelson.sinach@gmail.com?subject=Hello%20nelson"> nelson.sinach@gmail.com</a> </h3>
        
        </div>
     </div> 
-
-    <div></div>
         <!-- ======= About Section ======= -->
-     
+        <section>
+        <div  class="image-slider" id="about">
+          <div class="text-center pt-5" data-scrollax="properties: { translateY: '70%' }">
+            <a href="#" style="color: #fff; opacity: 0.5;" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }" onclick="scrollToSection('#abou')" >Nelson Okenwa</a>
+          </div>
+          
+          <div class="col-md-12 d-flex align-items-center justify-content-center">
+            <div class="col-md-9">
+              <div class="row">
+                <div  class="count-box ">
+                  <h1 style="color: #fff;">Delivered Projects</h1>
+                </div>
+                <div  class="col-md-7  image-swiper-container">
+                  <!-- Swiper container code -->
+                  <swiper-container class="mySwiper" navigation="true" pagination="true" effect="flip" grab-cursor="true">
+                    <swiper-slide>
+                      <img src="images/image_1.jpg" alt="">
+                    </swiper-slide>
+                    <swiper-slide>
+                      <img src="images/bg_2.jpg" alt="">
+                    </swiper-slide>
+                    <swiper-slide>
+                      <img src="images/image_2.jpg" alt="">
+                    </swiper-slide>
+                    <swiper-slide>
+                      <img src="images/image_3.jpg" alt="">
+                    </swiper-slide>
+                    <swiper-slide>
+                      <img src="images/image_4.jpg" alt="">
+                    </swiper-slide>
+                    <swiper-slide>
+                      <img src="images/image_5.jpg" alt="">
+                    </swiper-slide>
+                  </swiper-container>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </section>
+        <div style="color: white;" id="floating-line"></div>
+        <div style="color: white;" id="counter"></div>
+
+        <div  class="image-slider" id="about">
+          <div class="text-center pt-5" data-scrollax="properties: { translateY: '70%' }">
+            <a href="#" style="color: #fff; opacity: 0.5;" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }" onclick="scrollToSection('#abou')" >Nelson Okenwa</a>
+          </div>
+          
+          <div class="col-md-12 d-flex align-items-center justify-content-center">
+            <div class="col-md-9">
+              <div class="row">
+                <div  class="count-box ">
+                  <h1 style="color: #fff;">Delivered Projects</h1>
+                </div>
+                <div  class="col-md-7  image-swiper-container">
+                  <!-- Swiper container code -->
+                  <swiper-container class="mySwiper" navigation="true" pagination="true" effect="flip" grab-cursor="true">
+                    <swiper-slide>
+                      <img src="images/image_1.jpg" alt="">
+                    </swiper-slide>
+                    <swiper-slide>
+                      <img src="images/bg_2.jpg" alt="">
+                    </swiper-slide>
+                    <swiper-slide>
+                      <img src="images/image_2.jpg" alt="">
+                    </swiper-slide>
+                    <swiper-slide>
+                      <img src="images/image_3.jpg" alt="">
+                    </swiper-slide>
+                    <swiper-slide>
+                      <img src="images/image_4.jpg" alt="">
+                    </swiper-slide>
+                    <swiper-slide>
+                      <img src="images/image_5.jpg" alt="">
+                    </swiper-slide>
+                  </swiper-container>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="color: white;" id="floating-line"></div>
+<div style="color: white;" id="counter"></div>
+
+        <div  class="image-slider " id="about">
+          <div class="text-center pt-5" data-scrollax="properties: { translateY: '70%' }">
+            <a href="#" style="color: #fff; opacity: 0.5;" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }" onclick="scrollToSection('#abou')" >Nelson Okenwa</a>
+          </div>
+         <!-- <a style="color: #fff;" href="">bnnnnnnn</a> -->
+          <div class=" col-md-8 "> 
+            
+            <div class=" col-md-12 row ">
+              <div class="col-md-4">
+                <div class="count-box">
+                  <h1 style="color: #fff;">delivered Projects </h1>
+                </div>
+              </div>
+              <div class="col-md-7 image-swiper-container">
+                <!-- Swiper container code -->
+                <swiper-container class="mySwiper" navigation="true" pagination="true" effect="flip" grab-cursor="true">
+                  <swiper-slide>
+                    <img src="images/image_1.jpg" alt="">
+                  </swiper-slide>
+                  <swiper-slide>
+                    <img src="images/bg_2.jpg" alt="">
+                  </swiper-slide>
+                  <swiper-slide>
+                    <img src="images/image_2.jpg" alt="">
+                  </swiper-slide>
+                  <swiper-slide>
+                    <img src="images/image_3.jpg" alt="">
+                  </swiper-slide>
+                  <swiper-slide>
+                    <img src="images/image_4.jpg" alt="">
+                  </swiper-slide>
+                  <swiper-slide>
+                    <img src="images/image_5.jpg" alt="">
+                  </swiper-slide>
+                </swiper-container>
+              </div>
+        
+              
+            </div>
+          </div>
+        </div>
+        <div style="color: white;" id="floating-line"></div>
+        <div style="color: white;" id="counter"></div>
         <div class="image-slider">Slider 1</div>
 <div class="image-slider">Slider 2</div>
-<div class="image-slider">Slider 3</div>
-<div class="image-slider">Slider 4</div>
+<!-- <div class="image-slider">Slider 3</div>
+<div class="image-slider">Slider 4</div> -->
         <!-- End About Section -->
   
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
+<script>
+    let scrolling = false;
 
+      function debounceScroll() {
+        if (scrolling) return;
+        
+        scrolling = true;
+      
+        // Perform your scrolling-related actions here
+      
+        setTimeout(function() {
+          scrolling = false;
+        }, 10); // Adjust the delay (in milliseconds) based on your needs
+      }
+
+      window.addEventListener('scroll', debounceScroll);
+  </script>
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/popper.min.js"></script>
@@ -300,7 +423,35 @@
   <script src="https://cdn.jsdelivr.net/npm/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
 
+  <script>
+    // Get all the sections on your page
+const sections = document.querySelectorAll('section');
 
+// Create a function to update the counter
+const updateCounter = () => {
+  // Get the current scroll position
+  const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+  // Loop through each section and check if it is in the viewport
+  sections.forEach((section, div) => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.offsetHeight;
+    const sectionBottom = sectionTop + sectionHeight;
+
+    // Check if the section is visible on the screen
+    if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+      // Update the counter with the current section number
+      const counter = document.getElementById('counter');
+      counter.textContent = `${div + 1} / ${sections.length}`;
+    }
+  });
+};
+
+// Add an event listener for the scroll event
+window.addEventListener('scroll', updateCounter);
+
+  </script>
+  
   
   <script>
     const imageSliders = document.querySelectorAll('.image-slider');
@@ -344,19 +495,19 @@
         isScrolling = true;
   
         // Calculate the direction of scrolling
-        const delta = event.deltaY > 0 ? 1 : -1;
+        const delta = event.deltaY > 12 ? 1 : -1;
   
         // Update the current slider index
         currentSliderIndex += delta;
   
         // Clamp the index within the slider range
-        currentSliderIndex = Math.max(0, Math.min(currentSliderIndex, imageSliders.length - 1));
+        currentSliderIndex = Math.max(0, Math.min(currentSliderIndex, imageSliders.length +1000 ));
   
         // Get the target slider element
         const targetSlider = imageSliders[currentSliderIndex];
   
         // Calculate the duration based on the desired slow scrolling speed
-        const duration = 2000; // Adjust the duration (in milliseconds) for slower or faster scrolling
+        const duration = 1000; // Adjust the duration (in milliseconds) for slower or faster scrolling
   
         // Scroll to the target slider with a slow animation
         scrollToSlider(targetSlider, duration);
@@ -392,7 +543,7 @@
     function scrollToSection(sectionId) {
       const section = document.querySelector(sectionId);
       const offset = section.offsetTop;
-      const duration = 2000; // Animation duration in milliseconds
+      const duration = 1500; // Animation duration in milliseconds
       const start = window.pageYOffset;
       const startTime = 'now' in window.performance ? performance.now() : new Date().getTime();
   
@@ -429,7 +580,7 @@
 
     // Store the original text and the new text
     const originalText = 'Nelson Okenwa';
-    const newText = 'Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.'; // Replace 'New Text' with your desired text
+    const newText = 'Born, raised and schooled in Nigeria. have over 7 years of industry experience as a graphics designer and UI/UX. Held a position of a senior Game Ui/Ux Designer for 2years in Quiva games. Looking forward to broaden my experience even more with new challenges.'; // Replace 'New Text' with your desired text
 
     // Store the original design styles
     const originalStyles = window.getComputedStyle(textContainer);
