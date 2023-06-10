@@ -1595,9 +1595,9 @@ pre {
   font-weight: 400;
   line-height: 1.5;
   color: #495057;
-  background-color: #fff;
+  background-color: #ed0404;
   background-clip: padding-box;
-  border: 1px solid #ced4da;
+  border: 1px solid #fdfeff;
   border-radius: 0.25rem;
   -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
@@ -8533,8 +8533,8 @@ h1, h2, h3, h4, h5,
 
 .form-control {
   height: 52px !important;
-  background: #fff !important;
-  color: #000000 !important;
+  /* background: #fff !important;
+  color: #000000 !important; */
   font-size: 18px;
   border-radius: 5px;
   -webkit-box-shadow: none !important;
