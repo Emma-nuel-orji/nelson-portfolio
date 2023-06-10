@@ -31,17 +31,10 @@
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="main.js">
-<!-- 
-    <style>
-        
-       
-      </style> -->
+
 
       <style>
-        .image-slider {
-          height: 100vh;
-          
-        }
+        
         .row{
         
           padding-top: 100px;
@@ -192,10 +185,29 @@
       </style>
   </head>
   <body>
-    <!-- <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
-      <span>Nelson Okenwa</span>
-    </h1> -->
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+        <!-- <img src="images/image_5.jpg" alt=""> -->
+        <!-- <a class="navbar-brand" href="#" style="margin-left: 10px"><img
+          src="images/logo icon@4x.png" style="color: #fff;" height="35" width="35"/>NELSON UI</a> -->
+          <a href="#" style="color: #fff; width:50%; opacity: 0.5; " data-scrollax="properties: { translateY: '30%', opacity: 1.6 }" onclick="scrollToSection('#abou')" ><img
+            src="images/logo icon@4x.png" height="35" width="35"/>  NELSON UI</a>
+	      <!-- <a class="navbar-brand" href="index.html">Whisper</a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	          <li class="nav-item "><a href="index.html" class="nav-link">Home</a></li>
+	          <li class=" nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link">Portfolio</a></li>
+	          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav> 
     
+ 
     
     <div id="abou"  class="image-slider hero-wrap js-fullheight" style="background-image: url('images/home1.png');"  >
       <div class="overlay"></div>
@@ -235,7 +247,7 @@
     </div>
    
 
-    
+<!--     
     <div class="nav" style="visibility: inherit; opacity: 1; position:fixe">
         <div class="nav-left nav-transform left-corner">
        
@@ -251,40 +263,49 @@
            <h3 class="nav-mail">  <a style="color: white;" href="mailto:nelson.sinach@gmail.com?subject=Hello%20Nelson"> nelson.sinach@gmail.com</a> </h3>
        
        </div>
-    </div> 
+    </div>  -->
         <!-- ======= About Section ======= -->
         <section>
-        <div  class="image-slider" id="about">
-          <div class="text-center pt-5" data-scrollax="properties: { translateY: '70%' }">
-            <a href="#" style="color: #fff; opacity: 0.5;" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }" onclick="scrollToSection('#abou')" >Nelson Okenwa</a>
+        <div  class="image-slider " id="about">
+          <div style="width: 100%;" class="text-center pt-2 d-flex" data-scrollax="properties: { translateY: '70%' }">
+            
+            <a href="#" style="color: #fff; width:50%; opacity: 0.5;" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }" onclick="scrollToSection('#abou')" ><img
+              src="images/logo icon@4x.png" height="35" width="35"/>Nelson Okenwa</a>
+              <div style="color: white; width:50%;" id="floating-line"></div>
+              <div style="color: white; width:50%;" id="counter"></div>
           </div>
           
-          <div class="col-md-12 d-flex align-items-center justify-content-center">
+          <div style="bottom: 5%;" class="col-md-12 d-flex align-items-center justify-content-center top-0">
             <div class="col-md-9">
               <div class="row">
-                <div  class="count-box ">
-                  <h1 style="color: #fff;">Delivered Projects</h1>
+                <div style="justify-content: center;" class="count-box ">
+                  <h1 style="color: #fff;"> CYBERSPAWNS</h1>
+                  <p class="pl-5" >Mobile Game User interface & experience</p>
+                  <!-- <h5 class="pl-5" style="color: #fff;">hmjgbngh</h5> -->
                 </div>
-                <div  class="col-md-7  image-swiper-container">
+                <div  class="col-md-8  image-swiper-container">
                   <!-- Swiper container code -->
                   <swiper-container class="mySwiper" navigation="true" pagination="true" effect="flip" grab-cursor="true">
                     <swiper-slide>
-                      <img src="images/image_1.jpg" alt="">
+                      <img src="images/portfolio website/cyberspawns/game-login.png" alt="">
                     </swiper-slide>
                     <swiper-slide>
-                      <img src="images/bg_2.jpg" alt="">
+                      <img src="images/portfolio website/cyberspawns/loading-screen-cyberspawns.png" alt="">
                     </swiper-slide>
                     <swiper-slide>
-                      <img src="images/image_2.jpg" alt="">
+                      <img src="images/portfolio website/cyberspawns/count-down.png" alt="">
                     </swiper-slide>
                     <swiper-slide>
-                      <img src="images/image_3.jpg" alt="">
+                      <img src="images/portfolio website/cyberspawns/leaderboard.png" alt="">
                     </swiper-slide>
                     <swiper-slide>
-                      <img src="images/image_4.jpg" alt="">
+                      <img src="images/portfolio website/cyberspawns/Battle-to-moses.png" alt="">
                     </swiper-slide>
                     <swiper-slide>
-                      <img src="images/image_5.jpg" alt="">
+                      <img src="images/portfolio website/cyberspawns/VS-accept-match.png" alt="">
+                    </swiper-slide>
+                    <swiper-slide>
+                      <img src="images/portfolio website/cyberspawns/victory-33.png" alt="">
                     </swiper-slide>
                   </swiper-container>
                 </div>
@@ -293,100 +314,253 @@
           </div>
         </div>
         </section>
-        <div style="color: white;" id="floating-line"></div>
-        <div style="color: white;" id="counter"></div>
-
-        <div  class="image-slider" id="about">
-          <div class="text-center pt-5" data-scrollax="properties: { translateY: '70%' }">
-            <a href="#" style="color: #fff; opacity: 0.5;" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }" onclick="scrollToSection('#abou')" >Nelson Okenwa</a>
-          </div>
-          
-          <div class="col-md-12 d-flex align-items-center justify-content-center">
-            <div class="col-md-9">
-              <div class="row">
-                <div  class="count-box ">
-                  <h1 style="color: #fff;">Delivered Projects</h1>
-                </div>
-                <div  class="col-md-7  image-swiper-container">
-                  <!-- Swiper container code -->
-                  <swiper-container class="mySwiper" navigation="true" pagination="true" effect="flip" grab-cursor="true">
-                    <swiper-slide>
-                      <img src="images/image_1.jpg" alt="">
-                    </swiper-slide>
-                    <swiper-slide>
-                      <img src="images/bg_2.jpg" alt="">
-                    </swiper-slide>
-                    <swiper-slide>
-                      <img src="images/image_2.jpg" alt="">
-                    </swiper-slide>
-                    <swiper-slide>
-                      <img src="images/image_3.jpg" alt="">
-                    </swiper-slide>
-                    <swiper-slide>
-                      <img src="images/image_4.jpg" alt="">
-                    </swiper-slide>
-                    <swiper-slide>
-                      <img src="images/image_5.jpg" alt="">
-                    </swiper-slide>
-                  </swiper-container>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div style="color: white;" id="floating-line"></div>
-<div style="color: white;" id="counter"></div>
-
-        <div  class="image-slider " id="about">
-          <div class="text-center pt-5" data-scrollax="properties: { translateY: '70%' }">
-            <a href="#" style="color: #fff; opacity: 0.5;" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }" onclick="scrollToSection('#abou')" >Nelson Okenwa</a>
-          </div>
-         <!-- <a style="color: #fff;" href="">bnnnnnnn</a> -->
-          <div class=" col-md-8 "> 
-            
-            <div class=" col-md-12 row ">
-              <div class="col-md-4">
-                <div class="count-box">
-                  <h1 style="color: #fff;">delivered Projects </h1>
-                </div>
-              </div>
-              <div class="col-md-7 image-swiper-container">
-                <!-- Swiper container code -->
-                <swiper-container class="mySwiper" navigation="true" pagination="true" effect="flip" grab-cursor="true">
-                  <swiper-slide>
-                    <img src="images/image_1.jpg" alt="">
-                  </swiper-slide>
-                  <swiper-slide>
-                    <img src="images/bg_2.jpg" alt="">
-                  </swiper-slide>
-                  <swiper-slide>
-                    <img src="images/image_2.jpg" alt="">
-                  </swiper-slide>
-                  <swiper-slide>
-                    <img src="images/image_3.jpg" alt="">
-                  </swiper-slide>
-                  <swiper-slide>
-                    <img src="images/image_4.jpg" alt="">
-                  </swiper-slide>
-                  <swiper-slide>
-                    <img src="images/image_5.jpg" alt="">
-                  </swiper-slide>
-                </swiper-container>
-              </div>
         
-              
+
+        <section>
+          <div  class="image-slider" id="about">
+        
+            <div style="bottom: 5%;" class="col-md-12 d-flex align-items-center justify-content-center top-0">
+              <div class="col-md-9">
+                <div class="row">
+                  <div style="justify-content: center;" class="count-box ">
+                    <h1 style="color: #fff;"> CYBERSPAWNS</h1>
+                    <p class="pl-5" >Mobile Game User interface & experience</p>
+                    <!-- <h5 class="pl-5" style="color: #fff;">hmjgbngh</h5> -->
+                  </div>
+                  <div  class="col-md-8  image-swiper-container">
+                    <!-- Swiper container code -->
+                    <swiper-container class="mySwiper" navigation="true" pagination="true" effect="flip" grab-cursor="true">
+                      <swiper-slide>
+                        <img src="images/portfolio website/cyberspawns/game-login.png" alt="">
+                      </swiper-slide>
+                      <swiper-slide>
+                        <img src="images/portfolio website/cyberspawns/loading-screen-cyberspawns.png" alt="">
+                      </swiper-slide>
+                      <swiper-slide>
+                        <img src="images/portfolio website/cyberspawns/count-down.png" alt="">
+                      </swiper-slide>
+                      <swiper-slide>
+                        <img src="images/portfolio website/cyberspawns/leaderboard.png" alt="">
+                      </swiper-slide>
+                      <swiper-slide>
+                        <img src="images/portfolio website/cyberspawns/Battle-to-moses.png" alt="">
+                      </swiper-slide>
+                      <swiper-slide>
+                        <img src="images/portfolio website/cyberspawns/VS-accept-match.png" alt="">
+                      </swiper-slide>
+                      <swiper-slide>
+                        <img src="images/portfolio website/cyberspawns/victory-33.png" alt="">
+                      </swiper-slide>
+                    </swiper-container>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div style="color: white;" id="floating-line"></div>
-        <div style="color: white;" id="counter"></div>
-        <div class="image-slider">Slider 1</div>
-<div class="image-slider">Slider 2</div>
-<!-- <div class="image-slider">Slider 3</div>
-<div class="image-slider">Slider 4</div> -->
+          </section>
+
+
+          <section>
+            <div  class="image-slider" id="about">
+ 
+              <div style="bottom: 5%;" class="col-md-12 d-flex align-items-center justify-content-center top-0">
+                <div class="col-md-8">
+                  <div class="row">
+                    <div style="justify-content: center;" class="count-box ">
+                      <h1 style="color: #fff;"> MADWALLET</h1>
+                      <p class="pl-5" >Gamified Desktop Wallet Extension</p>
+                      <h5 class="pl-5" style="color: #fff;">Pirate Theme</h5>
+                    </div>
+                    <div  class="col-md-8  image-swiper-container">
+                      <!-- Swiper container code -->
+                      <swiper-container class="mySwiper" navigation="true" pagination="true" effect="flip" grab-cursor="true">
+                        <swiper-slide>
+                          <img src="images/portfolio website/madwallet pirate/Artboard 3@3x-100.jpg" alt="">
+                        </swiper-slide>
+                        <swiper-slide>
+                          <img src="images/portfolio website/madwallet pirate/Artboard 1 copy@3x-100.jpg" alt="">
+                        </swiper-slide>
+                        <swiper-slide>
+                          <img src="images/portfolio website/madwallet pirate/Artboard 1@3x-100.jpg" alt="">
+                        </swiper-slide>
+                        <swiper-slide>
+                          <img src="images/portfolio website/madwallet pirate/Artboard 8@3x-100.jpg" alt="">
+                        </swiper-slide>
+                        <swiper-slide>
+                          <img src="images/portfolio website/madwallet pirate/Artboard 6@3x-100.jpg" alt="">
+                        </swiper-slide>
+                        <swiper-slide>
+                          <img src="images/portfolio website/madwallet pirate/Artboard 1@3x-100.jpg" alt="">
+                        </swiper-slide>
+                      </swiper-container>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </section>
+
+            <section>
+              <div  class="image-slider" id="about">
+
+                <div style="bottom: 5%;" class="col-md-12 d-flex align-items-center justify-content-center top-0">
+                  <div class="col-md-8">
+                    <div class="row">
+                      <div style="justify-content: center;" class="count-box ">
+                        <h1 style="color: #fff;"> MADWALLET</h1>
+                        <p class="pl-5" >Gamified Desktop Wallet Extension </p>
+                        <h5 class="pl-5" style="color: #fff;">Rocky Theme</h5>
+                      </div>
+                      <div  class="col-md-8  image-swiper-container">
+                        <!-- Swiper container code -->
+                        <swiper-container class="mySwiper" navigation="true" pagination="true" effect="flip" grab-cursor="true">
+                          <swiper-slide>
+                            <img src="images/portfolio website/madwallet rocky/Artboard 1 copy 7@3x-100.jpg" alt="">
+                          </swiper-slide>
+                          <swiper-slide>
+                            <img src="images/portfolio website/madwallet rocky/Artboard 1 copy 4@3x-100.jpg" alt="">
+                          </swiper-slide>
+                          <swiper-slide>
+                            <img src="images/portfolio website/madwallet rocky/Artboard 1 copy 8@3x-100.jpg" alt="">
+                          </swiper-slide>
+                          <swiper-slide>
+                            <img src="images/portfolio website/madwallet rocky/Artboard 1 copy 2@3x-100.jpg" alt="">
+                          </swiper-slide>
+                          <swiper-slide>
+                            <img src="images/portfolio website/madwallet rocky/Artboard 1 copy 3@3x-100.jpg" alt="">
+                          </swiper-slide>
+                        </swiper-container>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </section>
+
+              <section>
+                <div  class="image-slider" id="about">
+                  
+                  <div style="bottom: 5%;" class="col-md-12 d-flex align-items-center justify-content-center top-0">
+                    <div class="col-md-9">
+                      <div class="row">
+                        <div style="justify-content: center;" class="count-box ">
+                          <h1 style="color: #fff;"> RTC</h1>
+                          <p class="pl-5" >Mobile Game User interface & experience </p>
+                          <!-- <h5 class="pl-5" style="color: #fff;">hmjgbngh</h5> -->
+                        </div>
+                        <div  class="col-md-8  image-swiper-container">
+                          <!-- Swiper container code -->
+                          <swiper-container class="mySwiper" navigation="true" pagination="true" effect="flip" grab-cursor="true">
+                            <swiper-slide>
+                              <img src="images/portfolio website/RTS/Artboard 6@3x-20.jpg" alt="">
+                            </swiper-slide>
+                            <swiper-slide>
+                              <img src="images/portfolio website/RTS/Artboard 13-100.jpg" alt="">
+                            </swiper-slide>
+                            <swiper-slide>
+                              <img src="images/portfolio website/RTS/Artboard 14@3x-20.jpg" alt="">
+                            </swiper-slide>
+                            <swiper-slide>
+                              <img src="images/portfolio website/RTS/Artboard 6-100.jpg" alt="">
+                            </swiper-slide>
+                            <swiper-slide>
+                              <img src="images/portfolio website/RTS/Mail Box.png" alt="">
+                            </swiper-slide>
+                            <swiper-slide>
+                              <img src="images/portfolio website/RTS/Artboard 7-100.jpg" alt="">
+                            </swiper-slide>
+                            <swiper-slide>
+                              <img src="images/portfolio website/RTS/Artboard 7.jpg" alt="">
+                            </swiper-slide>
+                            <swiper-slide>
+                              <img src="images/portfolio website/RTS/base 1@3x-20.jpg" alt="">
+                            </swiper-slide>
+                          </swiper-container>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </section>
         <!-- End About Section -->
   
+   
+        <footer id="contact" class="ftco-footer  ftco-section">
+          <div class="container">
+            <div style="padding-top: 2px;" class="row mb-5 ">
+              <div class="col-md">
+                <div class="ftco-footer-widget mb-4">
+                 <a href="#" style="color: #fff; width:50%; opacity: 0.5; " data-scrollax="properties: { translateY: '30%', opacity: 1.6 }" onclick="scrollToSection('#abou')" ><img
+                    src="images/logo icon@4x.png" height="35" width="35"/>  NELSON UI</a> <br>
+                 <P class="pl-5">Enugu, Nigeria.</P>
+                 <a class="pl-5" href="tel:08122116112">  +234 (0) 8122116112</a>
+                 <a class="pl-5" href="mailto:nelson.sinachi@gmail.com">nelson.sinachi@gmail.com</a>
+                 <a class="pl-5" style="opacity: .6;" href="mailto:nelson.sinachi@gmail.com">Download Resume</a>
+                  <!-- <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                    <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                    <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                    <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                  </ul> -->
+                </div>
+              </div>
+              <div class="col-md">
+                <div class="ftco-footer-widget mb-4 ml-md-5">
+                  <!-- <h2 class="ftco-heading-2">Practice Areas</h2> -->
+                  <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                    <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                    <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                    <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- <div class="col-md">
+                 <div class="ftco-footer-widget mb-4">
+                  <h2 class="ftco-heading-2">Business Hours</h2>
+                  <div class="opening-hours">
+                    <h4>Opening Days:</h4>
+                    <p class="pl-3">
+                      <span>Monday – Friday : 9am to 20 pm</span>
+                      <span>Saturday : 9am to 17 pm</span>
+                    </p>
+                    <h4>Vacations:</h4>
+                    <p class="pl-3">
+                      <span>All Sunday Days</span>
+                      <span>All Official Holidays</span>
+                    </p>
+                  </div>
+                </div>
+              </div> -->
+              <div  class="col-md-6">
+                <form action="#" class="bg-DARK p-5 contact-form">
+                  <div  class="form-group">
+                    <input style="background-color: #212020;" type="text" class="form-control" placeholder="Your Name">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Your Email">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Subject">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Message">
+                  </div>
+                  <div class="form-group">
+                    <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+                  </div>
+                </form>
+              
+              </div>
+            </div>
+            <div style="padding-top: 0px;" class="row">
+              <div class="col-md-12 text-center">
+    
+                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+       &copy;<script>document.write(new Date().getFullYear());</script>Copyright. All rights reserved  <i class="icon-heart color-danger" aria-hidden="true"></i>
+      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+              </div>
+            </div>
+          </div>
+        </footer>
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
@@ -575,6 +749,7 @@ window.addEventListener('scroll', updateCounter);
   <script>
     // Get the 'About' link element
     const aboutLink = document.querySelector('.nav-about');
+    const image = document.querySelector('.hero-wrap')
 
     // Get the text container to change
     const textContainer = document.querySelector('.text-container');
@@ -584,7 +759,7 @@ window.addEventListener('scroll', updateCounter);
 
     // Store the original text and the new text
     const originalText = 'Nelson Okenwa';
-    const newText = 'Born, raised and schooled in Nigeria. have over 7 years of industry experience as a graphics designer and UI/UX. Held a position of a senior Game Ui/Ux Designer for 2years in Quiva games. Looking forward to broaden my experience even more with new challenges.'; 
+    const newText = 'Born, raised and schooled in Nigeria. have over 7 years of industry experience as a graphics designer and UI/UX. Held a position of a senior Game Ui/Ux Designer for 2years in Quiva games.<br><br> Looking forward to broaden my experience even more with new challenges. <a style="color:white; text-decoration: none; " href="#">Linkedin </a> <a style="color:white; text-decoration: none;" href="#">Instagram </a> <a style="color:white; text-decoration: none;" href="#">Behance </a> <br> <a  style="color:white; text-decoration: none;" href="#">download my resume </a>' ; 
 
 
     // Store the original design styles
@@ -602,6 +777,7 @@ window.addEventListener('scroll', updateCounter);
         // Animate the text on the landing page with a slow fade-out effect
         textToChange.style.transition = 'opacity 2s';
         textToChange.style.opacity = 0;
+        <!-- image.style.opacity = 1; -->
 
         // Wait for the fade-out animation to complete
         setTimeout(function() {
@@ -610,7 +786,8 @@ window.addEventListener('scroll', updateCounter);
 
           textToChange.style.transition = 'opacity 2s';
           textToChange.style.opacity = 1;
-        }, 1000); // Adjust the duration (in milliseconds) based on the desired animation speed
+     
+        }, 500); // Adjust the duration (in milliseconds) based on the desired animation speed
       } else {
         // Change the 'About' link text back to 'About'
         aboutLink.innerText = 'About';
@@ -627,7 +804,7 @@ window.addEventListener('scroll', updateCounter);
           // Animate the text on the landing page with a slow fade-in effect
           textToChange.style.transition = 'opacity 2s';
           textToChange.style.opacity = 1;
-        }, 1000); // Adjust the duration (in milliseconds) based on the desired animation speed
+        }, 500); // Adjust the duration (in milliseconds) based on the desired animation speed
       }
     });
   </script>

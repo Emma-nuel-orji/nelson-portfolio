@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Nelson Game UI/UX Artist</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Favicons -->
+    <link href="images/nc@4x.png" rel="icon">
+    <link href="images/nc@4x.png" rel="apple-touch-icon">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    <link rel="stylesheet" href="./Steven Mengin Creative Director_files/main.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="main.js">
+
+
+      <style>
+        .image-slider {
+          height: 100vh;
+          
+        }
+        .row{
+        
+          padding-top: 100px;
+          align-items: center;
+          justify-content: center;
+          
+          color: white;
+        }
+        .image-slider:nth-child(odd) {
+          
+        }
+      
+        .image-slider:nth-child(even) {
+          
+        }
+
+        .background-container {
+          opacity: 1; /* Default opacity */
+          transition: opacity 2s;
+        }
+    
+        .background-container.opacity-change {
+          opacity: 0.4; /* Opacity when 'About' is clicked */
+        }
+        .new-text {
+          
+          color: red;
+          font-size: 20px;
+          /* Add any other styles you want */
+        }
+       
+        
+        
+        
+        h1 {
+          /* Your styles for the heading element */
+          margin-left: 20px; /* Add some space between the heading and container */
+        }
+        html,
+        body {
+          position: relative;
+          height: 100%;
+        }
+    
+        body {
+          background: #eee;
+          font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+          font-size: 14px;
+          color: #000;
+          margin: 0;
+          padding: 0;
+        }
+    
+        swiper-container {
+          width: 100%;
+          height: 100%;
+        }
+    
+        swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+    
+        swiper-slide img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+    
+        .autoplay-progress {
+          position: absolute;
+          right: 16px;
+          bottom: 16px;
+          z-index: 10;
+          width: 48px;
+          height: 48px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: bold;
+          color: var(--swiper-theme-color);
+        }
+    
+        .autoplay-progress svg {
+          --progress: 0;
+          position: absolute;
+          left: 0;
+          top: 0px;
+          z-index: 10;
+          width: 100%;
+          height: 100%;
+          stroke-width: 4px;
+          stroke: var(--swiper-theme-color);
+          fill: none;
+          stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+          stroke-dasharray: 125.6;
+          transform: rotate(-90deg);
+        }
+      
+        .arrow:hover {
+          color: #ffffff;
+        }
+
+        .left-corner {
+          position: fixed;
+          top: 50%;
+          left: 10;
+       
+        }
+    
+        .right-corner {
+          position: fixed;
+          top: 50%;
+          right: 10;
+        
+        }
+       /* Define the original design styles for the text container */
+    .text-container {
+      /* Add any original styles for the container here */
+    }
+
+    /* Define the original design styles for the text */
+    .original-text {
+      color: black;
+      font-size: 24px;
+      /* Add any other original styles for the text here */
+    }
+
+    /* Define the new text styles */
+    .new-text {
+      color: rgb(255, 255, 255); /* Replace 'red' with your desired color */
+      font-size: 20px; /* Replace '20px' with your desired font size */
+      background: rgba(24, 25, 25, 0);
+      border-radius: 50px;
+      width: 60%;
+      /* Add any other styles for the new text here */
+    }
+
+    /* Define the transition animation */
+    .fade-transition {
+      transition: opacity 2s;
+    }
+      </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+        <!-- <img src="images/image_5.jpg" alt=""> -->
+        <a class="navbar-brand" href="index.html" style="margin-left: 10px"><h2><img
+          src="images/icon.png" height="35" width="35"/></h2></a>
+	      <!-- <a class="navbar-brand" href="index.html">Whisper</a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	          <li class="nav-item "><a href="index.html" class="nav-link">Home</a></li>
+	          <li class=" nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="#about.html" class="nav-link">Portfolio</a></li>
+	          <li class="nav-item"><a href="#contact.html" class="nav-link">Contact</a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav> 
+    
+ 
+    
+    <div id="abou"  class="image-slider hero-wrap js-fullheight" style="background-image: url('images/bg.png');"  >
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center text-container" data-scrollax-parent="true">
+          <!-- <div class="">
+            <h1 class="original-text">Nelson Okenwa</h1>
+            <h2 class="original-text subheading">UI/UX Designer</h2>
+          </div> -->
+          <div class="col-md-10 text-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+          	
+            <h5 id="textToChange"  class="mb-4 original-text" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
+            	<span style="color: #eee;">Born, raised and schooled in Nigeria. have over 7 years of industry experience as a graphics designer and UI/UX. Held a position of a senior Game Ui/Ux Designer for 2years in Quiva games.<br><br> Looking forward to broaden my experience even more with new challenges.</span> 
+            </h5>
+            <h2 style="opacity: 0.6;" class="original-text subheading" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"> <a style="color: #ffffff6c;" href="">Linkedin</a> <a style="color: #ffffff6c;" href="">Instagram</a> <a style="color: #ffffff6c;" href="">Behance</a> </h2>
+            <h2 style="opacity: 0.6;" class="original-text subheading" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"> <a style="color: #ffffff6c;" href="">download my resume</a></h2>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+   
+
+<!--     
+    <div class="nav" style="visibility: inherit; opacity: 1; position:fixe">
+        <div class="nav-left nav-transform left-corner">
+       
+           <div id="#i"  class="nav-about-wrapper ">
+              <h3 class="nav-about"> About</h3>
+            </div>
+        </div>
+       
+       
+       <div class="nav-mail-wrapper nav-transform-right nav-right right-corner">
+       
+       
+           <h3 class="nav-mail">  <a style="color: white;" href="mailto:nelson.sinach@gmail.com?subject=Hello%20Nelson"> nelson.sinach@gmail.com</a> </h3>
+       
+       </div>
+    </div>  -->
+       
+    
+  
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+<script>
+    let scrolling = false;
+
+      function debounceScroll() {
+        if (scrolling) return;
+        
+        scrolling = true;
+      
+        // Perform your scrolling-related actions here
+      
+        setTimeout(function() {
+          scrolling = false;
+        }, 10); // Adjust the delay (in milliseconds) based on your needs
+      }
+
+      window.addEventListener('scroll', debounceScroll);
+  </script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+
+  <script>
+    // Get all the sections on your page
+const sections = document.querySelectorAll('section');
+
+// Create a function to update the counter
+const updateCounter = () => {
+  // Get the current scroll position
+  const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+  // Loop through each section and check if it is in the viewport
+  sections.forEach((section, div) => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.offsetHeight;
+    const sectionBottom = sectionTop + sectionHeight;
+
+    // Check if the section is visible on the screen
+    if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+      // Update the counter with the current section number
+      const counter = document.getElementById('counter');
+      counter.textContent = `${div + 1} / ${sections.length}`;
+    }
+  });
+};
+
+// Add an event listener for the scroll event
+window.addEventListener('scroll', updateCounter);
+
+  </script>
+  
+  
+  <script>
+    const imageSliders = document.querySelectorAll('.image-slider');
+    let currentSliderIndex = 0;
+    let isScrolling = false;
+    let scrollTimeout = null;
+  
+    function scrollToSlider(targetSlider, duration) {
+      const start = window.pageYOffset;
+      const target = targetSlider.offsetTop;
+      const distance = target - start;
+      let currentTime = 0;
+  
+      function scrollAnimation(timestamp) {
+        if (!isScrolling) return;
+  
+        if (!currentTime) currentTime = timestamp;
+        const progress = timestamp - currentTime;
+        const scrollTop = easeInOutCubic(progress, start, distance, duration);
+        window.scrollTo(0, scrollTop);
+  
+        if (progress < duration) {
+          requestAnimationFrame(scrollAnimation);
+        } else {
+          isScrolling = false;
+        }
+      }
+  
+      requestAnimationFrame(scrollAnimation);
+    }
+  
+    function easeInOutCubic(t, b, c, d) {
+      t /= d / 2;
+      if (t < 1) return (c / 2) * t * t * t + b;
+      t -= 2;
+      return (c / 2) * (t * t * t + 2) + b;
+    }
+  
+    function handleScroll(event) {
+      if (!isScrolling) {
+        isScrolling = true;
+  
+        // Calculate the direction of scrolling
+        const delta = event.deltaY > 12 ? 1 : -1;
+  
+        // Update the current slider index
+        currentSliderIndex += delta;
+  
+        // Clamp the index within the slider range
+        currentSliderIndex = Math.max(0, Math.min(currentSliderIndex, imageSliders.length +1000 ));
+  
+        // Get the target slider element
+        const targetSlider = imageSliders[currentSliderIndex];
+  
+        // Calculate the duration based on the desired slow scrolling speed
+        const duration = 1000; // Adjust the duration (in milliseconds) for slower or faster scrolling
+  
+        // Scroll to the target slider with a slow animation
+        scrollToSlider(targetSlider, duration);
+  
+        // Clear the scroll timeout
+        clearTimeout(scrollTimeout);
+  
+        // Set a timeout to enable scrolling again after the animation is complete
+        scrollTimeout = setTimeout(() => {
+          isScrolling = false;
+        }, duration);
+      }
+    }
+  
+    // Add scroll event listener to the window
+    window.addEventListener('wheel', handleScroll);
+  </script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    const progressCircle = document.querySelector(".autoplay-progress svg");
+    const progressContent = document.querySelector(".autoplay-progress span");
+
+    const swiperEl = document.querySelector("swiper-container");
+    swiperEl.addEventListener("autoplaytimeleft", (e) => {
+      const [swiper, time, progress] = e.detail;
+      progressCircle.style.setProperty("--progress", 1 - progress);
+      progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+    });
+  </script>
+  
+  <script>
+    function scrollToSection(sectionId) {
+      const section = document.querySelector(sectionId);
+      const offset = section.offsetTop;
+      const duration = 1500; // Animation duration in milliseconds
+      const start = window.pageYOffset;
+      const startTime = 'now' in window.performance ? performance.now() : new Date().getTime();
+  
+      function scrollStep(timestamp) {
+        const time = 'now' in window.performance ? performance.now() : new Date().getTime();
+        const elapsed = time - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const easing = easeInOutQuad(progress);
+        window.scrollTo(0, start + easing * (offset - start));
+        
+        if (elapsed < duration) {
+          window.requestAnimationFrame(scrollStep);
+        }
+      }
+  
+      function easeInOutQuad(t) {
+        return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+      }
+  
+      window.requestAnimationFrame(scrollStep);
+    }
+  </script>
+ 
+
+  <script>
+    // Get the 'About' link element
+    const aboutLink = document.querySelector('.nav-about');
+    const image = document.querySelector('.hero-wrap')
+
+    // Get the text container to change
+    const textContainer = document.querySelector('.text-container');
+
+    // Get the text element to change
+    const textToChange = document.getElementById('textToChange');
+
+    // Store the original text and the new text
+    const originalText = 'Nelson Okenwa';
+    const newText = 'Born, raised and schooled in Nigeria. have over 7 years of industry experience as a graphics designer and UI/UX. Held a position of a senior Game Ui/Ux Designer for 2years in Quiva games.<br><br> Looking forward to broaden my experience even more with new challenges. <a style="color:white; text-decoration: none; " href="#">Linkedin </a> <a style="color:white; text-decoration: none;" href="#">Instagram </a> <a style="color:white; text-decoration: none;" href="#">Behance </a> <br> <a  style="color:white; text-decoration: none;" href="#">download my resume </a>' ; 
+
+
+    // Store the original design styles
+    const originalStyles = window.getComputedStyle(textContainer);
+
+    // Set up click event listener for the 'About' link
+    aboutLink.addEventListener('click', function(event) {
+      event.preventDefault();
+
+      // Check if the text should be changed to 'Close' or 'About'
+      if (aboutLink.innerText === 'About') {
+        // Change the 'About' link text to 'Close'
+        aboutLink.innerText = 'Close';
+
+        // Animate the text on the landing page with a slow fade-out effect
+        textToChange.style.transition = 'opacity 2s';
+        textToChange.style.opacity = 0;
+        <!-- image.style.opacity = 1; -->
+
+        // Wait for the fade-out animation to complete
+        setTimeout(function() {
+          // Change the text to the new content
+          textToChange.innerHTML = '<span class="new-text">' + newText + '</span>';
+
+          textToChange.style.transition = 'opacity 2s';
+          textToChange.style.opacity = 1;
+     
+        }, 500); // Adjust the duration (in milliseconds) based on the desired animation speed
+      } else {
+        // Change the 'About' link text back to 'About'
+        aboutLink.innerText = 'About';
+
+        // Animate the text on the landing page with a slow fade-out effect
+        textToChange.style.transition = 'opacity 2s';
+        textToChange.style.opacity = 0;
+
+        // Wait for the fade-out animation to complete
+        setTimeout(function() {
+          // Change the text back to the original content
+          textToChange.innerText = originalText;
+
+          // Animate the text on the landing page with a slow fade-in effect
+          textToChange.style.transition = 'opacity 2s';
+          textToChange.style.opacity = 1;
+        }, 500); // Adjust the duration (in milliseconds) based on the desired animation speed
+      }
+    });
+  </script>
+</body>
+</html>
