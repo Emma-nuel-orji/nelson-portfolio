@@ -208,8 +208,6 @@
 	    </div>
 	  </nav> 
     
- 
-    
     <div id="abou"  class="image-slider hero-wrap js-fullheight" style="background-image: url('images/home1.png');"  >
       <div class="overlay"></div>
       <div class="container">
@@ -265,12 +263,13 @@
        
        </div>
     </div>  -->
+    <!-- onclick="scrollToSection('#abou')" -->
         <!-- ======= About Section ======= -->
         <section>
         <div   class="image-slider " id="about">
           <div style="width: 100%;" class="text-center pt-2 d-flex" data-scrollax="properties: { translateY: '70%' }">
             
-            <a href="#" style="color: #fff; width:50%; opacity: 0.5;" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }" onclick="scrollToSection('#abou')" ><img
+            <a href="#" style="color: #fff; width:50%; opacity: 0.5;" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"  ><img
               src="images/logo icon@4x.png" height="35" width="35"/>Nelson Okenwa</a>
               <div style="color: white; width:50%;" id="floating-line"></div>
               <div style="color: white; width:50%;" id="counter"></div>
@@ -530,81 +529,6 @@
   <script src="https://cdn.jsdelivr.net/npm/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
 
-  
-<!--   
-  <script>
-    const imageSliders = document.querySelectorAll('.image-slider');
-    let currentSliderIndex = 0;
-    let isScrolling = false;
-    let scrollTimeout = null;
-  
-    function scrollToSlider(targetSlider, duration) {
-      const start = window.pageYOffset;
-      const target = targetSlider.offsetTop;
-      const distance = target - start;
-      let currentTime = 0;
-  
-      function scrollAnimation(timestamp) {
-        if (!isScrolling) return;
-  
-        if (!currentTime) currentTime = timestamp;
-        const progress = timestamp - currentTime;
-        const scrollTop = easeInOutCubic(progress, start, distance, duration);
-        window.scrollTo(0, scrollTop);
-  
-        if (progress < duration) {
-          requestAnimationFrame(scrollAnimation);
-        } else {
-          isScrolling = false;
-        }
-      }
-  
-      requestAnimationFrame(scrollAnimation);
-    }
-  
-    function easeInOutCubic(t, b, c, d) {
-      t /= d / 2;
-      if (t < 1) return (c / 2) * t * t * t + b;
-      t -= 2;
-      return (c / 2) * (t * t * t + 2) + b;
-    }
-  
-    function handleScroll(event) {
-      if (!isScrolling) {
-        isScrolling = true;
-  
-        // Calculate the direction of scrolling
-        const delta = event.deltaY > 12 ? 1 : -1;
-  
-        // Update the current slider index
-        currentSliderIndex += delta;
-  
-        // Clamp the index within the slider range
-        currentSliderIndex = Math.max(0, Math.min(currentSliderIndex, imageSliders.length +1000 ));
-  
-        // Get the target slider element
-        const targetSlider = imageSliders[currentSliderIndex];
-  
-        // Calculate the duration based on the desired slow scrolling speed
-        const duration = 1000; // Adjust the duration (in milliseconds) for slower or faster scrolling
-  
-        // Scroll to the target slider with a slow animation
-        scrollToSlider(targetSlider, duration);
-  
-        // Clear the scroll timeout
-        clearTimeout(scrollTimeout);
-  
-        // Set a timeout to enable scrolling again after the animation is complete
-        scrollTimeout = setTimeout(() => {
-          isScrolling = false;
-        }, duration);
-      }
-    }
-  
-    // Add scroll event listener to the window
-    window.addEventListener('wheel', handleScroll);
-  </script> -->
-
   <!-- Initialize Swiper -->
   <script>
     const progressCircle = document.querySelector(".autoplay-progress svg");
@@ -617,34 +541,6 @@
       progressContent.textContent = `${Math.ceil(time / 1000)}s`;
     });
   </script>
-  
-  <!-- <script>
-    function scrollToSection(sectionId) {
-      const section = document.querySelector(sectionId);
-      const offset = section.offsetTop;
-      const duration = 1500; // Animation duration in milliseconds
-      const start = window.pageYOffset;
-      const startTime = 'now' in window.performance ? performance.now() : new Date().getTime();
-  
-      function scrollStep(timestamp) {
-        const time = 'now' in window.performance ? performance.now() : new Date().getTime();
-        const elapsed = time - startTime;
-        const progress = Math.min(elapsed / duration, 1);
-        const easing = easeInOutQuad(progress);
-        window.scrollTo(0, start + easing * (offset - start));
-        
-        if (elapsed < duration) {
-          window.requestAnimationFrame(scrollStep);
-        }
-      }
-  
-      function easeInOutQuad(t) {
-        return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
-      }
-  
-      window.requestAnimationFrame(scrollStep);
-    }
-  </script> -->
  
 
   <script>
